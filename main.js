@@ -6,7 +6,10 @@ const overlay = document.querySelector('.overlay');
 
 /* Looping through images */
 
-const newImage = document.createElement('img');
+for (let i = 1; i <= 5; i++) {
+    const newImage = document.createElement('img');
+}
+
 newImage.setAttribute('src', xxx);
 thumbBar.appendChild(newImage);
 
