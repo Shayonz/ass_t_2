@@ -17,10 +17,12 @@ btn.onclick = function(){
     if(btnColor == "dark"){
         btn.setAttribute("class", "light");
         btn.innerText = "lighten";
+        overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
 
     }
     else{
         btn.setAttribute("class", "dark");
         btn.innerText = "darken";
+        overlay.style.backgroundColor = "rgba(0,0,0,0)";
     }
 }
