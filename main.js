@@ -9,10 +9,12 @@ const overlay = document.querySelector('.overlay');
 for (let i = 1; i <= 5; i++) {
     const newImage = document.createElement('img');
     newImage.setAttribute('src', 'imgs/pic' + i + '.jpg');
-
+    thumbBar.appendChild(newImage);
+    newImage.onclick = function(x) {
+        //https://developer.mozilla.org/en-US/docs/Web/API/Event/target
+    displayedImage.src = x.target.src;
+    };
 }
-
-thumbBar.appendChild(newImage);
 
 /* Wiring up the Darken/Lighten button */
 btn.onclick = function(){
