@@ -11,3 +11,16 @@ newImage.setAttribute('src', xxx);
 thumbBar.appendChild(newImage);
 
 /* Wiring up the Darken/Lighten button */
+btn.onclick = function(){
+    const btnColor = btn.getAttribute("class");
+
+    if(btnColor == "dark"){
+        btn.setAttribute("class", "light");
+        btn.innerText = "lighten";
+
+    }
+    else{
+        btn.setAttribute("class", "dark");
+        btn.innerText = "darken";
+    }
+}
